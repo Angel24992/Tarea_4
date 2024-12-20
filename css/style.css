@@ -1,0 +1,108 @@
+:root {
+    --blanco: #fff;
+	--oscuro: #212121;
+	--primario: #ffc107;
+	--secundario: #7fdce6fd;
+	--gris: #c9efb1;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-size: 16px;
+    background-color: var(--secundario);
+    
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 2rem;
+    text-transform: uppercase;
+
+}
+
+p, li, dl {
+    font-size: 1.8rem;
+}
+dt {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav-bg {
+    background-color: var(--oscuro);
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+    }
+}
+.navegacion__enlace {
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    text-decoration: none;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .flex {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .flex img,
+    .uso {
+        width: 50%;
+    }
+}
+
+
+.footer {
+    text-align: center;
+    background-color: var(--oscuro);
+    padding: 1rem;
+    color: var(--blanco);
+    font-size: 2rem;
+    margin-top: 1rem;
+}
